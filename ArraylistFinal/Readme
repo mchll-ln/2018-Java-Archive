@@ -1,0 +1,61 @@
+Author: Michelle Lin
+Course: ICS4U
+Date: April 4th 2018
+Readme File: PiggyBank Problem with Inheritance and ArrayLists
+
+Program Design:
+-Total number of classes = 7
+	-Main class: 
+		1. MySavings2.java
+			-Includes: Piggybank object
+				-Functions: 
+					-add coins
+					-remove coins
+					-return the total amount in the bank
+	-Object class: 
+		2. PiggyBank2.java
+	-Interface: 
+		3. Coin.java
+	-Subclasses: 
+		4. Nickel.java 
+		5. Dime.java
+		6. Quarter.java
+		7. Loonie.java
+
+Classes Used, Type (abstract, base, super, …) and Purposes:
+-PiggyBank.java class creates an object type
+-Coin.java is an abstract class that uses polymorphism to build an abstract method for its subclass
+- Nickel.java, Dime.java, Quarter.java, and Loonie.java are 4 subclasses extended from Coin.java, created for different coin types
+
+Main program (fully documented explaining all data structures that are being used): 
+-Declare a scanner
+-Declare an ArrayList to store PiggyBank objects
+-Call on Void type Welcome() method
+	-Get and output user's name with an outputed greeting
+-Start do loop
+	-return type mainMenu() method displays the main menu 
+	-get user's inputed selection and execute specified operation accordingly
+		-return type getAmountinPB() method displays the total balance in the bank
+		-void type withdraw() method withdraws money from the account
+			-return type withdrawMenu() method allows the user to specifically input the coin(s) to be withdrawn
+		-Piggybank2.addNickel(), Piggybank2.addDime(), Piggybank2.addQuarter(), Piggybank2.addLoonie(), adds the specified coin to the account
+		-"break;" function is used to exit the program
+-End do loop	 
+
+PiggyBank Problem with Inheritance and ArrayList
+Create a MySavings2 application that displays a menu of choices for entering nickels, dimes, and quarters into a piggy bank and then prompts the user to make a selection.  The MySavings2 application should include a PiggyBank2 object that can add coins to the piggy bank, remove coins, and return the total amount in the bank.  Application should look similar to:
+1.	Show total in bank
+2.	Add a nickel.
+3.	Add a dime.
+4.	Add a quarter.
+5.	Add a loonie
+6.	Take money out of the bank.
+Enter 0 to quit.
+Enter your choice:  5
+
+Things to Include:
+1.	Create an abstract Coin class that has a getValue() accessor method. (5A)
+2.	Subtype the Coin class to create a Dime, Nickel, Quarter and Loonie class. (10A
+3.	PiggyBank2 should now contain an array list of Coin’s, to represent what is actually stored in the piggy bank.  Be sure to consider polymorphism in your implementation. (10T)
+4.	Update the PiggyBank2 so that it functions the same as before – except it will use the new array list of Coins.(10T)
+ 
